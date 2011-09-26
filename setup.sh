@@ -4,14 +4,11 @@ git clone git://github.com/blasterpal/vimfiles.git ~/.vimfiles
 
 echo "Creating links..."
 
-echo ".vim"
-ln -s ~/.vimfiles/vim ~/.vim
-
 echo ".vimrc"
-ln -s ~/.vimfiles/vim/vimrc ~/.vimrc
+ln -s ~/.vimfiles/vimrc ~/.vimrc
 
 echo ".gvimrc"
-ln -s ~/.vimfiles/vim/gvimrc ~/.gvimrc
+ln -s ~/.vimfiles/gvimrc ~/.gvimrc
 
 echo "\n\n Setup is complete"
 
