@@ -1,3 +1,4 @@
+call pathogen#infect()
 set nocompatible
 silent! call pathogen#runtime_append_all_bundles()
 
@@ -43,7 +44,9 @@ set nowritebackup
 set directory=~/.vim_backups//
 
 "Theme
-color molokai
+"color molokai
+set background=dark
+colorscheme solarized
 
 "Move lines with alt + direction
 nnoremap ∆ :m+<CR>==
@@ -63,7 +66,8 @@ set shiftwidth=2
 set autoread
 
 set laststatus=2
-set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
+"set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
+set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
 " Tab mappings.
 map <leader>tt :tabnew<cr>
